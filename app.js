@@ -13,7 +13,7 @@ const server = express();
 
 //Use assets
 server.use("/assets/css", express.static(__dirname + "/assets/css"));
-server.use("/volunteer",data_routes);
+server.use("/onday_details",data_routes);
 
 //Setting view engine
 server.set("view engine","ejs");
