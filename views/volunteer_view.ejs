@@ -70,8 +70,9 @@
     <tr>
       <th scope="col">#</th>
       <th scope="col">Name</th>
-      <th scope="col">Email</th>
+      <th scope="col">Event</th>
       <th scope="col">Phone</th>
+      <th scope="col">Branch</th>
  
     </tr>
   </thead>
@@ -93,6 +94,7 @@
         <td><%= data[i].name %></td>
         <td><%= data[i].event %></td>
         <td><%= data[i].phone %></td>
+        <td><%= data[i].branch %></td>
       
         <td><a href="/handle/auto/<%= data[i]._id %>/change" title=""><button type="button" class="btn btn-danger" onclick="return confirm('Do you really want to mark  this person as attended.This action cannot be reversed!');">|</button></a></td>
         
